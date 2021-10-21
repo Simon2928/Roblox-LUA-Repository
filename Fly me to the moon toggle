@@ -1,0 +1,7 @@
+local ex = trollos
+
+if ex == true then
+    game.SoundService["Fly me to the moon (Squid Game)"].Playing = true
+elseif ex == false then
+    game.SoundService["Fly me to the moon (Squid Game)"].Playing = false
+end
