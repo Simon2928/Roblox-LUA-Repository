@@ -1,0 +1,2 @@
+game:GetService("SoundService")["Doll Sounds"]["Doll Talk"].Changed:Wait() -- Waits till the Doll talks one time
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").RedLightGreenLight["RLGL Doll"].RootPart.CFrame
