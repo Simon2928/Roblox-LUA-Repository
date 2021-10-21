@@ -1,2 +1,1 @@
-# Roblox-LUA-Repository
-The name says it all
+An exploit GUI used for any game that I intend to add scripts to, pretty much it
