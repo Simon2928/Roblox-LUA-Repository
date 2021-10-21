@@ -1,0 +1,27 @@
+local username = game:GetService("Players").LocalPlayer.Name
+local Win11Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Skribb11es/Win11UILib/main/main.lua", true))()
+
+local menu = Win11Lib.createMenu("Paranormal UI", Enum.KeyCode.Tab, true, 1200, 600, "", username, "UI lib by Skribb11es")
+
+local tab = menu.addTab("Project Shark", "exTab1Flag", true, "6824925104")
+tab.addButton("RLGL Teleport", "Teleports you to the red light green light finish, it's an easy game nerd, its also obvious (tps you under doll)", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/ProjectShark%20RLGL%20Teleport", true))() end)
+tab.addButton("Honeycomb Finish", "Automatically completes the Honeycomb cutter game", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/Honeycomb%20Auto", true))() end)
+tab.addButton("Glass Floor Assist", "NOTE: Wait until the cutscene for the specific game is over, then press the button", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/Glass%20Floor%20Assist", true))() end)
+tab.addButton("RLGL Teleport", "Teleports you to the red light green light finish, it's an easy game nerd, its also obvious (tps you under doll)", function() game.SoundService["Fly me to the moon (Squid Game)"].Playing = true end)
+tab.addSlider("Example Slider", "exSliderFlag", 0, 1, true, "Example Slider Description", "6824925104", function(ex) game.SoundService["Fly me to the moon (Squid Game)"].Volume = ex end)
+local dropdown = tab.addDropdown("Example Dropdown", "Example Dropdown Description")
+dropdown.addOption("Example Dropdown Option", "exampleDropdownOptionFlag", function(ex) print(ex) end)
+tab.addToggle("Example Toggle", "exampleToggleFlag", "Example Toggle", function(ex) if ex == true then
+    game.SoundService["Fly me to the moon (Squid Game)"].Playing = true
+    game.SoundService["Fly me to the moon (Squid Game)"].Looped = true
+elseif ex == false then
+    game.SoundService["Fly me to the moon (Squid Game)"].Playing = false
+    game.SoundService["Fly me to the moon (Squid Game)"].Looped = false
+    game.SoundService["Fly me to the moon (Squid Game)"].TimePosition = 0
+end
+end)
+tab.addButton("Honeycomb Finish", "Automatically completes the Honeycomb cutter game", function() game.ReplicatedStorage["Regular Music"].Volume = 0 end)
+
+
+local tab2 = menu.addTab("Example Tab 2", "exTab2Flag", false, "6824925104")
+tab2.addButton("Example Button", "Example Button Description", function() print("button pressed") end)
