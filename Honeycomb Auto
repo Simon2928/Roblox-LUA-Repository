@@ -1,0 +1,2 @@
+game:GetService("ReplicatedStorage").RemoteEvents.HoneycombShoot:FireServer(true)
+game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
