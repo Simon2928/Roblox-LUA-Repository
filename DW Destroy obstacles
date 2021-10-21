@@ -1,0 +1,6 @@
+for i,v in pairs(game:GetService("Workspace").Interactables:GetChildren()) do
+    if v.Name == "Double Locker" or v.Name == "Locker" or v.Name == "LockerGroup" or v.Name == "Barrel" or v.Name == "ScavTraps" or v.Name == "Medical Cabinet" then
+        v:Destroy()
+        wait()
+    end
+end
