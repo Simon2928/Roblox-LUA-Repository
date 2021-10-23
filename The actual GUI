@@ -6,12 +6,8 @@ local menu = Win11Lib.createMenu("Paranormal UI", Enum.KeyCode.Tab, true, 1200, 
 local tab = menu.addTab("Project Shark", "exTab1Flag", true, "6824925104")
 tab.addButton("RLGL Teleport", "Teleports you to the red light green light finish, it's an easy game nerd, its also obvious (tps you under doll)", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/ProjectShark%20RLGL%20Teleport", true))() end)
 tab.addButton("Honeycomb Finish", "Automatically completes the Honeycomb cutter game", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/Honeycomb%20Auto", true))() end)
-tab.addButton("Glass Floor Assist", "NOTE: Wait until the cutscene for the specific game is over, then press the button", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/Glass%20Floor%20Assist", true))() end)
-tab.addButton("RLGL Teleport", "Teleports you to the red light green light finish, it's an easy game nerd, its also obvious (tps you under doll)", function() game.SoundService["Fly me to the moon (Squid Game)"].Playing = true end)
-tab.addSlider("Example Slider", "exSliderFlag", 0, 1, true, "Example Slider Description", "6824925104", function(ex) game.SoundService["Fly me to the moon (Squid Game)"].Volume = ex end)
-local dropdown = tab.addDropdown("Example Dropdown", "Example Dropdown Description")
-dropdown.addOption("Example Dropdown Option", "exampleDropdownOptionFlag", function(ex) print(ex) end)
-tab.addToggle("Example Toggle", "exampleToggleFlag", "Example Toggle", function(ex) if ex == true then
+tab.addButton("Glass Floor TP", "NOTE: Wait until the cutscene for the specific game is over, then press the button", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(685, 57, -471) end)
+tab.addToggle("Fly me to the moon", "exampleToggleFlag", "Game has this audio so why not (Both in lobby and game)", function(ex) if ex == true then
     game.SoundService["Fly me to the moon (Squid Game)"].Playing = true
     game.SoundService["Fly me to the moon (Squid Game)"].Looped = true
 elseif ex == false then
@@ -20,8 +16,17 @@ elseif ex == false then
     game.SoundService["Fly me to the moon (Squid Game)"].TimePosition = 0
 end
 end)
-tab.addButton("Honeycomb Finish", "Automatically completes the Honeycomb cutter game", function() game.ReplicatedStorage["Regular Music"].Volume = 0 end)
+tab.addSlider("Fly me to the moon [Volume]", "exSliderFlag", 0, 100, true, "Changes the volume of the song toggled above", "6824925104", function(ex) game.SoundService["Fly me to the moon (Squid Game)"].Volume = ex/100 end)
+tab.addButton("Turn off solder theme", "Turns off that DODODODODODOO shit", function() game.ReplicatedStorage["Regular Music"].Volume = 0 end)
+local dropdown = tab.addDropdown("temporary this is useless", "piss off")
+dropdown.addOption("Example Dropdown Option", "exampleDropdownOptionFlag", function(ex) print(ex) end)
+
+
+
+tab.addSlider("Example Slider", "exSliderFlag", 0, 100, 50, true, "Example Slider Description", "6824925104", function(ex) print(ex) end)
+
 
 
 local tab2 = menu.addTab("Example Tab 2", "exTab2Flag", false, "6824925104")
-tab2.addButton("Example Button", "Example Button Description", function() print("button pressed") end)
+tab2.addButton("GoodWill Script", "Hold T in game to see all the functions in the goodwill menu", function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/GOODWILL_COMMAND_SCRIPT'),true))() end)
+tab2.addButton("Destroy obstacles", "It's pretty obvious innit", function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/DW%20Destroy%20obstacles'),true))() end)
