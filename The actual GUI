@@ -8,17 +8,17 @@ tab.addButton("RLGL Teleport", "Teleports you to the red light green light finis
 tab.addButton("Honeycomb Finish", "Automatically completes the Honeycomb cutter game", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/Honeycomb%20Auto", true))() end)
 tab.addButton("Glass Floor TP", "NOTE: Wait until the cutscene for the specific game is over, then press the button", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(681.067139, 57.3738213, -494.087128) end)
 tab.addButton("Squid Game TP", "TP's you to the arena", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-405.848938, 5.921875, 307.155945) end)
-tab.addToggle("Fly me to the moon", "exampleToggleFlag", "Game has this audio so why not (Both in lobby and game)", function(ex) if ex == true then
+tab.addToggle("Fly me to the moon", "exampleToggleFlag", "Game has this audio so why not (Both in lobby and game)", false ,function(ex) if ex == true then
     game.SoundService["Fly me to the moon (Squid Game)"].Playing = true
     game.SoundService["Fly me to the moon (Squid Game)"].Looped = true
 elseif ex == false then
     game.SoundService["Fly me to the moon (Squid Game)"].Playing = false
     game.SoundService["Fly me to the moon (Squid Game)"].Looped = false
     game.SoundService["Fly me to the moon (Squid Game)"].TimePosition = 0
-end
-end)
-tab.addSlider("Fly me to the moon [Volume]", "exSliderFlag", 0, 100, true, "Changes the volume of the song toggled above", "6824925104", function(ex) game.SoundService["Fly me to the moon (Squid Game)"].Volume = ex/100 end)
-tab.addButton("Turn off solder theme", "Turns off that DODODODODODOO shit", function() game.ReplicatedStorage["Regular Music"].Volume = 0 end)
+    end
+    end)
+tab.addSlider("Fly me to the moon [Volume]", "exSliderFlag", 0, 100, 50, true, "Changes the volume of the song toggled above", "6824925104", function(ex) game.SoundService["Fly me to the moon (Squid Game)"].Volume = ex/100 end)
+tab.addButton("Turn off current theme", "Turns off that DODODODODODOO shit", function() game.ReplicatedStorage["Regular Music"].Volume = 0 end)
 local dropdown = tab.addDropdown("temporary this is useless", "piss off")
 dropdown.addOption("Example Dropdown Option", "exampleDropdownOptionFlag", function(ex) print(ex) end)
 
