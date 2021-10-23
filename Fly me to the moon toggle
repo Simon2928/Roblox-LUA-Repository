@@ -1,0 +1,8 @@
+    game.SoundService["Fly me to the moon (Squid Game)"].Playing = true
+    game.SoundService["Fly me to the moon (Squid Game)"].Looped = true
+elseif ex == false then
+    game.SoundService["Fly me to the moon (Squid Game)"].Playing = false
+    game.SoundService["Fly me to the moon (Squid Game)"].Looped = false
+    game.SoundService["Fly me to the moon (Squid Game)"].TimePosition = 0
+end
+end)
