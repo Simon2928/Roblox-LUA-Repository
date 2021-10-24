@@ -80,7 +80,8 @@ misc.addSlider("Music Volume Changer", "VolumeFlag", 0, 100, 50, true, "Changes 
 local tab = menu.addTab("Project Shark", "exTab1Flag", true, "6824925104")
 tab.addButton("RLGL Teleport", "Teleports you to the red light green light finish, it's an easy game nerd, its also obvious (tps you under doll)", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/ProjectShark%20RLGL%20Teleport", true))() end)
 tab.addButton("Honeycomb Finish", "Automatically completes the Honeycomb cutter game", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/Honeycomb%20Auto", true))() end)
-tab.addButton("Glass Floor TP", "NOTE: Wait until the cutscene for the specific game is over, then press the button", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(681.067139, 57.3738213, -494.087128) end)
+tab.addButton("Glass Floor TP", "NFor grinding, yknow", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(681.067139, 57.3738213, -494.087128) end)
+tab.addButton("Glass Floor Assist", "Note: Wait for the cutscene to end then press the button.", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/Glass%20Floor%20Assist", true))() end)
 tab.addButton("Squid Game TP", "TP's you to the arena", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-405.848938, 5.921875, 307.155945) end)
 tab.addToggle("Fly me to the moon", "exampleToggleFlag", "Game has this audio so why not (Both in lobby and game)", false ,function(ex) if ex == true then
     game.SoundService["Fly me to the moon (Squid Game)"].Playing = true
