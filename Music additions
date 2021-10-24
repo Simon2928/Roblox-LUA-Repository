@@ -40,3 +40,10 @@ FlyMe.Name = "FlyMe"
 FlyMe.SoundId = "http://www.roblox.com/asset/?id=7744355924"
 FlyMe.Playing = false
 FlyMe.Looped = true
+
+local Crazy = Instance.new("Sound")
+Crazy.Parent = workspace
+Crazy.Name = "Crazy"
+Crazy.SoundId = "http://www.roblox.com/asset/?id=4639707594"
+Crazy.Playing = false
+Crazy.Looped = true
