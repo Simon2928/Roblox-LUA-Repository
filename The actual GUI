@@ -72,6 +72,19 @@ elseif ex == false then
     end
 end)
 
+dropdownmisc.addOption("Gnarls Barkley, Crazy", "CrazyFlag", false, function(ex) if ex == true then
+    game.Workspace["Crazy"].Playing = true
+    game.Workspace["Crazy"].Looped = true
+elseif ex == false then
+    game.Workspace["Crazy"].Playing = false
+    game.Workspace["Crazy"].Looped = false
+    game.Workspace["Crazy"].TimePosition = 0
+    end
+end)
+
+
+
+
 
 misc.addSlider("Music Volume Changer", "VolumeFlag", 0, 100, 50, true, "Changes the volume of the songs above", "6824925104",
     function(ex) game.Workspace["Spooky"].Volume = ex/100
