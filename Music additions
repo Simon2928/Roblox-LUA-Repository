@@ -1,0 +1,35 @@
+local Spooky = Instance.new("Sound")
+Spooky.Parent = workspace
+Spooky.Name = "Spooky"
+Spooky.SoundId = "http://www.roblox.com/asset/?id=177276825"
+Spooky.Playing = false
+Spooky.Looped = true
+
+
+local Blinding = Instance.new("Sound")
+Blinding.Parent = workspace
+Blinding.Name = "BlindingLights"
+Blinding.SoundId = "http://www.roblox.com/asset/?id=6897718931"
+Blinding.Playing = false
+Blinding.Looped = true
+
+local MamaMia = Instance.new("Sound")
+MamaMia.Parent = workspace
+MamaMia.Name = "MamaMia"
+MamaMia.SoundId = "http://www.roblox.com/asset/?id=6897506319"
+MamaMia.Playing = false
+MamaMia.Looped = true
+
+local BlueSky = Instance.new("Sound")
+BlueSky.Parent = workspace
+BlueSky.Name = "BlueSky"
+BlueSky.SoundId = "http://www.roblox.com/asset/?id=6925524169"
+BlueSky.Playing = false
+BlueSky.Looped = true
+
+local Happy = Instance.new("Sound")
+Happy.Parent = workspace
+Happy.Name = "Happy"
+Happy.SoundId = "http://www.roblox.com/asset/?id=152347962"
+Happy.Playing = false
+Happy.Looped = true
