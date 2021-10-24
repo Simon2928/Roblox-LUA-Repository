@@ -62,7 +62,15 @@ elseif ex == false then
     end
 end)
 
-
+dropdownmisc.addOption("Fly Me to the Moon", "Moon Flag", false, function(ex) if ex == true then
+    game.Workspace["FlyMe"].Playing = true
+    game.Workspace["FlyMe"].Looped = true
+elseif ex == false then
+    game.Workspace["FlyMe"].Playing = false
+    game.Workspace["FlyMe"].Looped = false
+    game.Workspace["FlyMe"].TimePosition = 0
+    end
+end)
 
 
 misc.addSlider("Music Volume Changer", "VolumeFlag", 0, 100, 50, true, "Changes the volume of the songs above", "6824925104",
@@ -72,7 +80,6 @@ misc.addSlider("Music Volume Changer", "VolumeFlag", 0, 100, 50, true, "Changes 
     game.Workspace["BlueSky"].Volume = ex/100
     game.Workspace["Happy"].Volume = ex/100
     end)
-
 
 
 -----------------------------------------------------------------------
