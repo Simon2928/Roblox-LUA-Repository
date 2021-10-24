@@ -1,7 +1,81 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/Music%20additions", true))()
+wait(0.1)
 local username = game:GetService("Players").LocalPlayer.Name
 local Win11Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Skribb11es/Win11UILib/main/main.lua", true))()
 
 local menu = Win11Lib.createMenu("Paranormal UI", Enum.KeyCode.Tab, true, 1200, 600, "", username, "UI lib by Skribb11es")
+
+-----------------------------------------------------------------------
+
+local misc = menu.addTab("Misc", "MiscFlag", true, "7059346386")
+misc.addButton("Mouse Overlay", "Just provides and extra mouse if you can't see it while in the menu", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/extra%20mouse", true))() end)
+
+local dropdownmisc = misc.addDropdown("Music!", "Contains local music!")
+
+dropdownmisc.addOption("Spooky Scary Skeletons", "SpookyFlag", false, function(ex) if ex == true then
+    game.Workspace["Spooky"].Playing = true
+    game.Workspace["Spooky"].Looped = true
+elseif ex == false then
+    game.Workspace["Spooky"].Playing = false
+    game.Workspace["Spooky"].Looped = false
+    game.Workspace["Spooky"].TimePosition = 0
+    end
+end)
+
+dropdownmisc.addOption("Mama Mia", "MamaFlag", false, function(ex) if ex == true then
+    game.Workspace["MamaMia"].Playing = true
+    game.Workspace["MamaMia"].Looped = true
+elseif ex == false then
+    game.Workspace["MamaMia"].Playing = false
+    game.Workspace["MamaMia"].Looped = false
+    game.Workspace["MamaMia"].TimePosition = 0
+    end
+end)
+
+dropdownmisc.addOption("Blue Sky (Slow Jazz Remix)", "BlueSkyFlag", false, function(ex) if ex == true then
+    game.Workspace["BlueSky"].Playing = true
+    game.Workspace["BlueSky"].Looped = true
+elseif ex == false then
+    game.Workspace["BlueSky"].Playing = false
+    game.Workspace["BlueSky"].Looped = false
+    game.Workspace["BlueSky"].TimePosition = 0
+    end
+end)
+
+dropdownmisc.addOption("Happy Remix", "HappyFlag", false, function(ex) if ex == true then
+    game.Workspace["Happy"].Playing = true
+    game.Workspace["Happy"].Looped = true
+elseif ex == false then
+    game.Workspace["Happy"].Playing = false
+    game.Workspace["Happy"].Looped = false
+    game.Workspace["Happy"].TimePosition = 0
+    end
+end)
+
+dropdownmisc.addOption("Blinding Lights", "BlindingFlag", false, function(ex) if ex == true then
+    game.Workspace["BlindingLights"].Playing = true
+    game.Workspace["BlindingLights"].Looped = true
+elseif ex == false then
+    game.Workspace["BlindingLights"].Playing = false
+    game.Workspace["BlindingLights"].Looped = false
+    game.Workspace["BlindingLights"].TimePosition = 0
+    end
+end)
+
+
+
+
+misc.addSlider("Music Volume Changer", "VolumeFlag", 0, 100, 50, true, "Changes the volume of the songs above", "6824925104",
+    function(ex) game.Workspace["Spooky"].Volume = ex/100
+    game.Workspace["BlindingLights"].Volume = ex/100
+    game.Workspace["MamaMia"].Volume = ex/100
+    game.Workspace["BlueSky"].Volume = ex/100
+    game.Workspace["Happy"].Volume = ex/100
+    end)
+
+
+
+-----------------------------------------------------------------------
 
 local tab = menu.addTab("Project Shark", "exTab1Flag", true, "6824925104")
 tab.addButton("RLGL Teleport", "Teleports you to the red light green light finish, it's an easy game nerd, its also obvious (tps you under doll)", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/ProjectShark%20RLGL%20Teleport", true))() end)
@@ -19,15 +93,5 @@ elseif ex == false then
     end)
 tab.addSlider("Fly me to the moon [Volume]", "exSliderFlag", 0, 100, 50, true, "Changes the volume of the song toggled above", "6824925104", function(ex) game.SoundService["Fly me to the moon (Squid Game)"].Volume = ex/100 end)
 tab.addButton("Turn off current theme", "Turns off that DODODODODODOO shit", function() game.ReplicatedStorage["Regular Music"].Volume = 0 end)
-local dropdown = tab.addDropdown("temporary this is useless", "piss off")
-dropdown.addOption("Example Dropdown Option", "exampleDropdownOptionFlag", function(ex) print(ex) end)
 
-
-
-tab.addSlider("Example Slider", "exSliderFlag", 0, 100, 50, true, "Example Slider Description", "6824925104", function(ex) print(ex) end)
-
-
-
-local tab2 = menu.addTab("Example Tab 2", "exTab2Flag", false, "6824925104")
-tab2.addButton("GoodWill Script", "Hold T in game to see all the functions in the goodwill menu", function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/GOODWILL_COMMAND_SCRIPT'),true))() end)
-tab2.addButton("Destroy obstacles", "It's pretty obvious innit", function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/Simon2928/Roblox-LUA-Repository/main/DW%20Destroy%20obstacles'),true))() end)
+-----------------------------------------------------------------------
