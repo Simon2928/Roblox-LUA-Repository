@@ -92,7 +92,7 @@ misc.addSlider("Music Volume Changer", "VolumeFlag", 0, 100, 50, true, "Changes 
     game.Workspace["MamaMia"].Volume = ex/100
     game.Workspace["BlueSky"].Volume = ex/100
     game.Workspace["Happy"].Volume = ex/100
-    game.WOrkspace["FlyMe"].Volume = ex/100
+    game.Workspace["FlyMe"].Volume = ex/100
     game.Workspace["Crazy"].Volume = ex/100
     end)
 
